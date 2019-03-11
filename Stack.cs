@@ -44,6 +44,7 @@ class MyStack<T>{
         stack = new T[size];
         top = -1; //Stack is empty
     }
+    /* Push to Stack */
     public int Push_(T obj){
         
         if(top == size - 1){ //if stack is full
@@ -60,9 +61,10 @@ class MyStack<T>{
         return 0;
         
     }
+    /* Pop off Stack */
     public T Pop(){
         
-        T popped; //to store popped variable
+        T popped; //store popped variable
         T temp = default(T);
         if(!(top <=0)){ //if Stack is not empty
             popped = stack[top];
